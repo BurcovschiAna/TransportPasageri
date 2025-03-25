@@ -1,0 +1,252 @@
+.nav-container{
+  background-color: #015551;
+}
+
+.nav{
+  position: relative;
+  z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.nav div{
+  width: 65%;
+}
+.nav a{
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+.nav a:hover, .footer a:hover{
+  color: rgba(255, 255, 255, 0.779);
+}
+
+
+/*! Banner  */
+.banner{
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+.scroll-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.banner img{
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% -200px;
+}
+.banner h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+
+}
+.banner .overlay{
+  background-color: rgba(0, 0, 0, 0.342);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*! ServiciiComp */
+.servicii-container{
+  padding: 20px;
+  margin: 50px 0;
+}
+.servicii-home{
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+}
+.servicii-item-home{
+  max-width: 300px;
+  margin: 10px 0;
+
+}
+.servicii-item-home img{
+  border-radius: 20px;
+  max-width: 100%;
+}
+.servicii-item-home .description{
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+  font-size: 18px;
+}
+.servicii-item-servicii{
+  padding: 20px 0;
+}
+.servicii-item-servicii div {
+  padding: 20px;
+  width: 50%;
+}
+.servicii-item-servicii img{
+  width: 100%;
+}
+.servicii-item-servicii .description p{
+  padding: 10px 0;
+  font-size: 16px;
+}
+.description .route{
+  line-height: 30px;
+  font-size: 18px;
+  list-style-position: inside;
+}
+
+/*! Benefits */
+.benefits-conatiner, .form-container{
+  background-color: #F1F0E9;
+  margin: 50px 0;
+  padding: 20px;
+}
+.benefits-conatiner .flexbox{
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.item-benefits{
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+.item-benefits span{
+  font-size: 50px;
+}
+.item-benefits p{
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+/*! Form  */
+
+form > div:first-child{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+}
+.item-input{
+  position: relative;
+  height: 35px;
+  /* width: 200px; */
+}
+.item-input label {
+  position: absolute;
+  color: #015551;
+  font-weight: bold;
+  left: 20px; 
+  top: 50%;
+  transform: translateY(-30%);
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.item-input input {
+  border: 2px solid #015551; 
+  outline: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #015551; 
+  width: 200px; 
+  font-size: 16px;
+  border-radius: 20px;
+}
+.item-input input:focus +  label, .item-input input:valid + label {
+  top: -20px;
+}
+.select{
+  width: 100%;
+  user-select: none;
+}
+.selected{
+  padding: 10px 20px;
+  color: #015551;
+
+  border: 2px solid #015551; 
+  border-radius: 20px;
+}
+.options{
+  border: 2px solid #015551; 
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+.option{
+  padding: 10px 20px;
+  /* margin: 2px 0; */
+  /* width: 100%; */
+
+}
+.option:hover {
+  background-color: #0155514f;
+  color: white;
+  
+}
+.form-img {
+  width: 50%;
+}
+.form-img img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.btn-submit{
+  background-color: #015551;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  margin: 50px auto;
+  display: flex;
+}
+
+/*! Contact */
+.contact-descriere{
+  padding: 20px 0;
+}
+.contact-descriere p{
+  line-height: 30px;
+  padding: 20px 0;
+}
+.contact-descriere li{
+  list-style: inside;
+}
+.harta iframe{
+  width: 99%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/*! Footer  */
+.footer-container{
+  background-color: #015551;
+  margin: 50px 0 0;
+  padding: 20px;
+  color: white;
+}
+.footer > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.footer a{
+  line-height: 40px;
+  font-size: 18px;
+}
+.copyrites{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}

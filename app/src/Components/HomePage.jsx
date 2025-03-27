@@ -29,10 +29,10 @@ export default function HomePage (){
     return (
         <>
             <Banner />
+            
+            
+            <ServiciiComp isHomePage={true} />
             <Benefits />
-            {/* <div className="wrapper"> */}
-                <ServiciiComp isHomePage={true} />
-            {/* </div> */}
             
             <Form />
         </>

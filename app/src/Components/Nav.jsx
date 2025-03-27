@@ -1,4 +1,5 @@
 import { Link} from 'react-router-dom';
+import Telephone from "../assets/img/Telephone.svg"
 
 export default function Nav(props) {
 
@@ -19,7 +20,8 @@ export default function Nav(props) {
                         <Link to="/Services" className='nav-item'>
                             Servicii
                         </Link>
-                        <a href={`tel:${props.telephone}`}>
+                        <a href={`tel:${props.telephone}`} className='flexbox'>
+                            <img src={Telephone} alt="" />
                             {props.telephone}
                         </a>
                     </div> 

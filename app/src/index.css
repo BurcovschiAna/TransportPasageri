@@ -3,8 +3,12 @@
   src: url(./assets/font/Roboto-Regular.ttf);
 }
 :root {
+  --main-color: #015551;
+  --hover-link-color: rgba(255, 255, 255, 0.779);;
+  --hover-btn-color: #0155517d;
+  --background-color: #F1F0E9;
   font-family: Roboto;
-  color: #015551;
+  color: var(--main-color);
   background-color: #FDFAF6;
 
   font-synthesis: none;
@@ -22,7 +26,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #01555196;
+  color: var(--hover-color);
 }
 p{
   font-size: 16px;
@@ -47,9 +51,15 @@ p{
 .wrapper{
   max-width: 1300px;
   margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
 }
-
+.title {
+  font-size: 30px;
+  text-align: center;
+}
 .subtitle{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }

@@ -2,19 +2,22 @@ import { Link} from 'react-router-dom';
 
 import facebook from "../assets/img/Facebook.svg"
 import instagram from "../assets/img/Instagram.svg"
-import whatsapp from "../assets/img/Whatsapp.svg"
+import Telephone from "../assets/img/Telephone.svg"
+
 
 export default function Footer(props){
     const telephone = "+1234567890";
     return (
         <div className="footer-container">
+            <div className="wave"></div>
             <div className="wrapper">
                 <div className="flexbox footer">
                     <div>
                         <Link to="/" className='logo'>
                             Logo
                         </Link> 
-                        <a href={`tel:${props.telephone}`}>
+                        <a href={`tel:${props.telephone}`} className='flexbox'>
+                            <img src={Telephone} alt="" />
                             {props.telephone}
                         </a> 
                         <a href='#'>

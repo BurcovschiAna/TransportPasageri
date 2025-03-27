@@ -91,7 +91,7 @@ export default function Form() {
                         )}
                     </div>
                 </div>
-                <button type="submit" className="btn-submit">
+                <button type="submit" className="btn btn-submit">
                     Trimite
                 </button>
             </form>

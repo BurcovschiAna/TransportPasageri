@@ -1,19 +1,19 @@
 import { useState, useRef, useEffect } from "react";
 import formImg from "../assets/img/Banner3.jpg"
-const destinations = ["Cahul", "București", "Galați", "Iași"];
+import { useTranslation } from 'react-i18next'; 
 
 export default function Form() {
+    const { t } = useTranslation(); 
+    const destinations = t("form.option", { returnObjects: true });
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [number, setNumber] = useState("");
-    const [selectedDestination, setSelectedDestination] = useState("Selecteaza");
+    const [selectedDestination, setSelectedDestination] = useState();
     const [isSelectOpen, setIsSelectOpen] = useState(false);
     const selectRef = useRef(null);
 
     const handleSubmit = (event) => {
         event.preventDefault(); 
-        
-        console.log({ name, email, number, selectedDestination });
     };
 
     const handleOptionClick = (option) => {
@@ -48,7 +48,9 @@ export default function Form() {
                             value={name}
                             onChange={(e) => setName(e.target.value)} 
                         />
-                        <label htmlFor="name">Nume</label>
+                        <label htmlFor="name">
+                            {t("form.name")}
+                        </label>
                     </div>
                     <div className="item-input">
                         <input 
@@ -58,7 +60,9 @@ export default function Form() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)} 
                         />
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email">
+                            {t("form.email")}
+                        </label>
                     </div>
                     <div className="item-input">
                         <input 
@@ -68,13 +72,15 @@ export default function Form() {
                             value={number}
                             onChange={(e) => setNumber(e.target.value)} 
                         />
-                        <label htmlFor="phone">Telefon</label>
+                        <label htmlFor="phone">
+                        {t("form.telephone")}
+                        </label>
                     </div>
                     <div className="select" ref={selectRef}>
                         <div 
                             className="selected" 
                             onClick={() => setIsSelectOpen(!isSelectOpen)}>
-                            {selectedDestination}
+                            {selectedDestination || t("form.select") }
                         </div>
                         {isSelectOpen && (
                             <div className="options">
@@ -91,8 +97,8 @@ export default function Form() {
                         )}
                     </div>
                 </div>
-                <button type="submit" className="btn btn-submit">
-                    Trimite
+                <button type="submit" className="btn">
+                    {t("form.btn")}
                 </button>
             </form>
             <div className="form-img">

@@ -8,14 +8,13 @@ import Footer from './Components/Footer'
 
 const telephone = "1234567890"
 function App() {
-
   return (
     <>
       <Nav telephone={telephone}/>
       <Routes>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/" element={<HomePage  telephone={telephone}/>} />
                 <Route path='/Contacts' element={<Contacts telephone={telephone} />} />
-                <Route path='/Services' element={<Services />} />
+                <Route path='/Services' element={<Services telephone={telephone}/>} />
             </Routes>
       <Footer telephone={telephone}/>
       

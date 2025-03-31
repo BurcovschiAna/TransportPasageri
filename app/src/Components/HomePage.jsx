@@ -1,10 +1,13 @@
 import banner1 from "../assets/img/Banner1.jpg"
-
+import Reviews from "./Reviews"
 
 import Benefits from "./Benefits"
 import ServiciiComp from "./ServiciiComp"
 import Form from "./Form"
+
+import { useTranslation } from 'react-i18next'; 
 const Banner =  () => {
+    const { t } = useTranslation();
     window.addEventListener('scroll', () => {
         const scrollImage = document.querySelector('.scroll-container');
         const scrollPosition = window.scrollY;
@@ -18,22 +21,22 @@ const Banner =  () => {
                 
                 <div className="overlay">
                     <h1>
-                        Transport pasageri Sergiu
+                        {t("banner")}
                     </h1>
                 </div>
             </div> 
     );
     
 }
-export default function HomePage (){
+export default function HomePage (props){
     return (
         <>
             <Banner />
             
-            
-            <ServiciiComp isHomePage={true} />
+           
+            <ServiciiComp isHomePage={true} telephone={props.telephone}/>
             <Benefits />
-            
+            <Reviews/>
             <Form />
         </>
     );

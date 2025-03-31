@@ -1,43 +1,49 @@
-import Bucharest from "../assets/img/Bucuresti.jpg"
-import Galata from "../assets/img/Galati.jpg"
-import Iasi from "../assets/img/Iasi.jpg"
+import Bucharest from "../assets/img/Bucuresti.jpg";
+import Galata from "../assets/img/Galati.jpg";
+import Iasi from "../assets/img/Iasi.jpg";
 import Whatsapp from "../assets/img/Whatsapp.svg";
-const data =[
-    {
-        name: "Transport Cahul - București",
-        img: Bucharest,
-        route: ["Cahul", "București", "Aeroport"],
-        descriptionShort: "Transport pasageri zilnic. Pentru informatii suplimentare contactați-ne după următorul număr.",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit maiores enim est laborum, culpa expedita. Praesentium ea omnis velit vel consectetur architecto beatae, deleniti aliquid culpa totam harum quas ad dolorum placeat fugiat iure corrupti corporis tempora, repudiandae minima esse! Dignissimos nemo aliquid obcaecati dolores at nostrum optio corporis!"
-    },
-    {
-        name: "Transport Cahul - Iași",
-        img: Iasi,
-        route: ["Cahul", "Aeroport", "Iași"],
-        descriptionShort: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit maiores enim est laborum, culpa expedita. Praesentium ea omnis velit vel consectetur architecto beatae, deleniti aliquid culpa totam harum quas ad dolorum placeat fugiat iure corrupti corporis tempora, repudiandae minima esse! Dignissimos nemo aliquid obcaecati dolores at nostrum optio corporis!"
-    },
-    {
-        name: "Transport Cahul - Galați",
-        img: Galata,
-        route: ["Cahul", "Galați"],
-        descriptionShort: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit maiores enim est laborum, culpa expedita. Praesentium ea omnis velit vel consectetur architecto beatae, deleniti aliquid culpa totam harum quas ad dolorum placeat fugiat iure corrupti corporis tempora, repudiandae minima esse! Dignissimos nemo aliquid obcaecati dolores at nostrum optio corporis!"
-    }
-]
+import { useTranslation } from 'react-i18next'; 
 
 export default function ServiciiComp(props) {
+    const { t } = useTranslation(); 
+
+    const data = [
+        {
+            name: t("services.route_short.0"),
+            img: Bucharest,
+            route: t("services.route_long.0", { returnObjects: true }), 
+            descriptionShort: t("services.description_short"),
+            description: t("services.description_long.0")
+        },
+        {
+            name: t("services.route_short.1"),
+            img: Iasi,
+            route: t("services.route_long.1", { returnObjects: true }), 
+            descriptionShort: t("services.description_short"),
+            description: t("services.description_long.1")
+        },
+        {
+            name: t("services.route_short.2"),
+            img: Galata,
+            route: t("services.route_long.2", { returnObjects: true }), 
+            descriptionShort: t("services.description_short"),
+            description: t("services.description_long.2")
+        }
+    ];
+
     const isHomePage = props.isHomePage;
 
     return (
         <>
             <div className="servicii-container">            
-                <h1 className="title">Servicii</h1>
+                <h1 className="title">
+                    {t("services.title")}
+                </h1>
                 <div className="wrapper">
                     {isHomePage ? 
                         <div className="servicii-home flexbox">
-                            {data.map( item => (
-                                <div className="servicii-item-home" key={item.name}>
+                            {data.map((item, index) => (
+                                <div className="servicii-item-home" key={index}>
                                     <img src={item.img} alt={item.name} />
                                     <div className="description">
                                         <p className="subtitle">
@@ -46,20 +52,20 @@ export default function ServiciiComp(props) {
                                         <p>
                                              {item.descriptionShort}
                                         </p>
-                                        <div className="btn">
-                                            <img src={Whatsapp} alt="" />
-                                        </div>
+                                        <a href={`tel:${props.telephone}`} className="btn flexbox">
+                                            <img src={Whatsapp} alt="WhatsApp"/>
+                                            {props.telephone}
+                                        </a>
                                     </div>
-                                    
                                 </div>
                             ))}
                         </div>
                         : 
                         <div className="servicii-servicii">
-                            {data.map( item => (
-                                <div key={item.name} className="servicii-item-servicii flexbox">
+                            {data.map((item, index) => (
+                                <div key={index} className="servicii-item-servicii flexbox">
                                     <div>
-                                        <img src={item.img} />
+                                        <img src={item.img} alt={item.name} />
                                     </div>
                                     <div className="description">
                                         <h1 className="subtitle">
@@ -68,17 +74,20 @@ export default function ServiciiComp(props) {
                                         <p>
                                             {item.description}
                                         </p>
-                                        
+                                        <p>
+                                            {t("services.description_short")} 
+                                        </p>
                                         <ul>
-                                            {item.route.map(route => (
-                                                <li className="route" key={route}>
+                                            {item.route.map((route, routeIndex) => (
+                                                <li className="route" key={routeIndex}>
                                                     {route}
                                                 </li>
                                             ))}
                                         </ul>
-                                        <p>
-                                            Orar flexibil
-                                        </p>
+                                        <a href={`tel:${props.telephone}`} className="btn flexbox">
+                                            <img src={Whatsapp} alt="WhatsApp"/>
+                                            {props.telephone}
+                                        </a>
                                     </div>
                                 </div>
                             ))}

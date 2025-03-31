@@ -1,4 +1,5 @@
 import { Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; 
 
 import facebook from "../assets/img/Facebook.svg"
 import instagram from "../assets/img/Instagram.svg"
@@ -6,7 +7,7 @@ import Telephone from "../assets/img/Telephone.svg"
 
 
 export default function Footer(props){
-    const telephone = "+1234567890";
+    const { t } = useTranslation(); 
     return (
         <div className="footer-container">
             <div className="wave"></div>
@@ -33,20 +34,20 @@ export default function Footer(props){
                     <div>
                                        
                         <Link to="/" className='nav-item'>
-                            Acasa
+                            {t('menu.home')} 
                         </Link> 
                         <Link to="/Contacts" className='nav-item'>
-                            Contact
+                            {t("menu.contacts")} 
                         </Link> 
                         <Link to="/Services" className='nav-item'>
-                             Servicii
+                            {t("menu.services")}
                         </Link>
                        
                     </div>
                                 
                 </div>
                 <div className="copyrites">
-                    ©  2025 Dezvoltat de Ana Burcovschi. Toate drepturile rezervate.
+                    {t("copyrights")}
                 </div>
             </div>
         </div>

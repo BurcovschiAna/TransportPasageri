@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import facebook from "../assets/img/Facebook.svg"
 import instagram from "../assets/img/Instagram.svg"
 import Telephone from "../assets/img/Telephone.svg"
-
+import logo from "../assets/img/logo.svg"
 
 export default function Footer(props){
     const { t } = useTranslation(); 
@@ -15,7 +15,7 @@ export default function Footer(props){
                 <div className="flexbox footer">
                     <div>
                         <Link to="/" className='logo'>
-                            Logo
+                            <img src={logo} alt="" />
                         </Link> 
                         <a href={`tel:${props.telephone}`} className='flexbox'>
                             <img src={Telephone} alt="" />

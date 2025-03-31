@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Telephone from "../assets/img/Telephone.svg";
 import { useTranslation } from 'react-i18next'; 
 
+import logo from "../assets/img/logo.svg"
 export default function Nav(props) {
     const { t, i18n } = useTranslation(); 
 
@@ -17,7 +18,7 @@ export default function Nav(props) {
         <div className="nav-container">
             <div className='nav flexbox'>
                 <Link to="/" className='logo'>
-                    Logo
+                    <img src={logo} alt="" />
                 </Link>
                 <div className='flexbox nav-links'>
                     <Link to="/" className='nav-item'>

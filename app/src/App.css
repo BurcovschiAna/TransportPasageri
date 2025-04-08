@@ -162,6 +162,9 @@ a.btn img{
   border-radius: 50%;
   margin-right: 20px;
 }
+.review-text{
+  padding-top: 20px;
+}
 .name{
   font-size: 18px;
 }

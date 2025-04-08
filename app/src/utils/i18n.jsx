@@ -61,7 +61,7 @@ const resources = {
     ru: {
         translation: {
             menu: {
-                logo: "Транспорт MD-RO",
+                logo: "Транспорт МД-РО",
                 home: "Главная",
                 contacts: "Контакты",
                 services: "Услуги"
@@ -96,7 +96,15 @@ const resources = {
                 "Безопасность во время поездки",
                 "Детские кресла для безопасности детей"
             ],
-            recinzii: [],
+            reviews: {
+                title: "Отзывы",
+                message1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message4: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message5: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message6: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+            },
             form: {
                 message: "У вас есть вопросы?",
                 contact: "Свяжитесь с нами любым удобным для вас способом"

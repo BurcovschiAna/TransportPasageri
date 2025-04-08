@@ -20,6 +20,10 @@ export default function Benefits(){
             img: <span className="material-symbols-outlined"> safety_divider</span>,
             description: t("benefits.3" )
         },
+        {
+            img: <span className="material-symbols-outlined">child_friendly</span>,
+            description: t("benefits.4")
+        }
 
     ]
     return (

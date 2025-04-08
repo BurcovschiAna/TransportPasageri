@@ -16,17 +16,24 @@ export default function Footer(props){
                     <div>
                         <Link to="/" className='logo'>
                             <img src={logo} alt="" />
+                            <div>
+                                {t("menu.logo")}
+                            </div>
+                            
                         </Link> 
                         <a href={`tel:${props.telephone}`} className='flexbox'>
                             <img src={Telephone} alt="" />
                             {props.telephone}
                         </a> 
-                        <a href='#'>
-                            <img src={facebook} alt="" />
-                        </a>
-                        <a href='#'>
-                            <img src={instagram} alt="" />
-                        </a>
+                        <div className='flexbox'>
+                            <a href='#' className='social'>
+                                <img src={facebook} alt="" />
+                            </a>
+                            <a href='#' className='social'>
+                                <img src={instagram} alt="" />
+                            </a>
+                        </div>
+                        
 
                         
                         

@@ -17,7 +17,7 @@
   color: white;
 }
 .nav a:hover, .footer a:hover{
-  color: var(--hover-link-color);
+  opacity: .7;
 }
 .btn-lang{
 border: 1px solid white;
@@ -49,26 +49,34 @@ user-select: none;
   width: 100%;
   transition: all 0.2s ease-in-out;
 }
-.banner img{
+.banner-img{
   width: 100%;
   object-fit: cover;
   object-position: 50% -200px;
 }
-.banner h1{
+.overlay > div{
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;
 
+  width: 60%;
+}
+.overlay h1{
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 .banner .overlay{
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgba(0, 0, 0, 0.618);
   width: 100%;
   height: 100%;
   position: absolute;
+}
+.banner .btn:hover{
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+   
 }
 
 /*! ServiciiComp */
@@ -93,9 +101,10 @@ user-select: none;
 .servicii-item-home .description{
   text-align: center;
   line-height: 30px;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 18px;
 }
+
 .servicii-item-servicii{
   padding: 20px 0;
 }
@@ -103,7 +112,7 @@ user-select: none;
   padding: 20px;
   width: 50%;
 }
-.servicii-item-servicii img{
+.item-img img{
   width: 100%;
 }
 .servicii-item-servicii .description p{
@@ -121,8 +130,6 @@ a.btn img{
 /*! Benefits */
 .benefits-conatiner, .form-container{
   background-color: var(--background-color);
-  /* margin: 50px 0;
-  padding: 20px; */
 }
 .benefits-conatiner .flexbox{
   align-items: flex-start;
@@ -142,71 +149,35 @@ a.btn img{
 }
 
 .reviews-container{
-  height: 100px;
-}
-
-/*! Form  */
-
-form > div:first-child{
+  padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-
 }
-.item-input{
-  position: relative;
-  height: 35px;
+.review-item .flexbox{
+  justify-content: start;
 }
-.item-input label {
-  position: absolute;
-  color: var(--main-color);
-  font-weight: bold;
-  left: 20px; 
-  top: 50%;
-  transform: translateY(-30%);
+.review-item img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.name{
   font-size: 18px;
-  transition: all 0.2s ease-in-out;
 }
-
-.item-input input {
-  border: 2px solid var(--main-color); 
-  outline: none;
-  background-color: transparent;
-  padding: 10px 20px;
-  color: var(--main-color); 
-  width: 200px; 
-  font-size: 16px;
-  border-radius: 20px;
+/*! Form  */
+.form-container{
+  margin: 50px 0;
 }
-.item-input input:focus +  label, .item-input input:valid + label {
-  top: -20px;
+.form h1{
+  line-height: 50px;
 }
-.select{
-  width: 100%;
-  user-select: none;
+.form .btn{
+  width: 260px;
+  justify-content: center;
 }
-.selected{
-  padding: 10px 20px;
-  color: var(--main-color);
-
-  border: 2px solid var(--main-color); 
-  border-radius: 20px;
-}
-.options{
-  border: 2px solid var(--main-color); 
-  border-radius: 20px;
-  overflow: hidden;
-  margin-top: 2px;
-}
-.option{
-  padding: 10px 20px;
-
-
-}
-.option:hover {
-  background-color: var(--hover-btn-color);
-  color: white;
-  
+.form .btn:hover, .description .btn:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0);
 }
 .form-img {
   width: 50%;
@@ -215,6 +186,7 @@ form > div:first-child{
   width: 100%;
   border-radius: 50%;
 }
+
 
 
 
@@ -249,9 +221,15 @@ form > div:first-child{
   align-items: center;
 
 }
+.footer img{
+  width: 100%;
+}
 .footer a{
   line-height: 40px;
   font-size: 18px;
+}
+.social{
+  padding: 10px 20px;
 }
 .copyrites{
   font-size: 12px;

@@ -25,9 +25,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-a:hover {
+/* a:hover {
   color: var(--hover-color);
-}
+} */
 p{
   font-size: 16px;
 }
@@ -46,14 +46,7 @@ p{
   user-select: none;
   cursor: pointer;
 }
-.btn:hover{
-  background-color: transparent;
-  color: inherit;
-  border: 2px solid var(--main-color);
-}
-.btn:hover img{
-  background-color: var(--main-color);
-}
+
 .flexbox{
   display: flex;
   flex-direction: row;
@@ -63,7 +56,7 @@ p{
 
 .wrapper{
   max-width: 1300px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 20px;
   position: relative;
   z-index: 2;

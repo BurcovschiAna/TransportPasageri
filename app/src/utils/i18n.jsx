@@ -4,107 +4,108 @@ const resources = {
     ro: {
         translation: {
             menu: {
+                logo: "Transport MD-RO",
                 home: "Acasă",
                 contacts: "Contacte",
                 services: "Servicii"
             },
-            banner: "Transport pasageri Sergiu",
+            btn: "Scrieți în",
+            banner: "Transport pasageri zilnic la / de la Cahul - aeroport/oraș București, Cahul - aeroport/oras Iași, Cahul - Galați, Cahul - Bacău. Pentru destinații suplimentare contactați-ne după numărul următor.",
             services: {
                 title: "Servicii",
                 route_short: [
                     "Transport Cahul-București", 
                     "Transport Cahul-Iași", 
-                    "Transport Cahul-Galați"  
+                    "Transport Cahul-Galați",
+                    "Transport Cahul-Bacău" 
                 ],
                 route_long:  [
                     ["Cahul", "Otopeni", "Aeroport Henri Coandă", "Băneasa" ,"București"], 
-                    ["Cahul", "Aeroport", "Iași"], 
+                    ["Cahul",  "La cererea clinetului: Cantemir" , "La cererea clinetului: Leova", "Aeroport Iași", "Iași"], 
+                    ["Cahul", "Bacău"],
                     ["Cahul", "Galați"]
                 ],
-                description_short: "Transport pasageri zilnic la / de la. Pentru destinații suplimentare, contactați-ne după numarul următor.",
                 description_long: [
-                    "Rute confortabile și rapide din Cahul spre București, trecând prin Aeroportul Otopeni și Băneasa, pentru a asigura o călătorie plăcută și fără stres.",
-                    "Transport direct din Cahul către Aeroportul Iași și autogara din Iași, pentru a ajunge rapid și comod, ideal pentru călătorii de afaceri sau vacanțe.",
-                    "Călătorii rapide și accesibile din Cahul către Galați, oferind servicii excelente și un orar flexibil pentru a se adapta nevoilor pasagerilor."
+                    "Transportul pasagerilor se efectuează zilnic între Cahul și București cu opriri convenabile la aeroporturile Otopeni Henri Coandă și Băneasa. Studenții beneficiază de reduceri, ceea ce face călătoria mai accesibilă pentru tineri. La rezervare, aveți opțiunea de a indica ora dorită de sosire în București, în cazul în care destinația nu este aeroportul. Ora de plecare se adaptează la programul zborului, respectând regula „2-3 ore înainte de decolare”, asigurându-vă astfel că ajungeți la timp pentru toate formalitățile de îmbarcare și călătorie.",
+                    "Transportul pasagerilor se efectuează zilnic între  Cahul și Iași oferă un serviciu eficient, cu opriri la cererea clientului în Cantemir și Leova, între orele 8:00 și 20:00. De asemenea, se fac opriri la aeroportul din Iași, facilitând accesul călătorilor. Studenții beneficiază de reduceri, ceea ce face călătoria mai accesibilă. La rezervare, aveți opțiunea de a indica ora dorită de sosire în Iași, în cazul în care destinația nu este aeroportul. Ora de plecare se va adapta la programul zborului, respectând regula „2-3 ore înainte de decolare” pentru confortul tuturor pasagerilor.",
+                    "Transportul pasagerilor se efectuează zilnic între Cahul și Bacău, oferind un serviciu eficient și confortabil. Studenții beneficiază de reduceri, făcând călătoria mai accesibilă. La rezervare, aveți opțiunea de a indica ora dorită de sosire în Bacău, pentru a se adapta programului dumneavoastră. Acest serviciu asigură o experiență plăcută și fără stres, facilitând accesul rapid la destinație și respectând nevoile tuturor călătorilor.",
+                    "Transportul pasagerilor se desfășoară zilnic între Cahul și Galați, asigurând un serviciu de calitate. Studenții pot beneficia de reduceri, ceea ce face călătoria mai convenabilă. La rezervare, aveți posibilitatea de a specifica ora dorită de sosire în Galați, pentru a se potrivi cu programul dumneavoastră. Această opțiune oferă flexibilitate și confort, garantând o călătorie plăcută și eficientă pentru toți pasagerii."
                 ],
             },
             benefits: [
                 "Comfort în timpul călătoriei",
                 "Bagaj gratuit pentru toți pasagerii",
                 "Orar flexibil",
-                "Siguranță în timpul călătoriei"
+                "Siguranță în timpul călătoriei",
+                "Scaune auto pentru siguranța copiilor"
             ],
-            recinzii: [],
-            form: {
-                name: "Nume",
-                email: "Email",
-                telephone: "Telefon",
-                select: "Selectează",
-                option: ["Cahul", "București", "Galați", "Iași"],
-                btn: "Trimite"
+            reviews: {
+                title: "Recenzii",
+                message1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message4: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message5: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                message6: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
             },
-            contacts: {
-                message1: "Vă mulțumim că ați ales Transport Pasageri Sergiu! Suntem aici pentru a vă oferi cele mai bune servicii de transport, adaptate nevoilor dumneavoastră. Dacă aveți întrebări, sugestii sau doriți să solicitați o ofertă, nu ezitați să ne contactați.",
-                address: "Adresă",
-                message2: "Completați formularul de mai jos și un reprezentant al companiei noastre vă va contacta în cel mai scurt timp posibil."
+            form: {
+                message: "Aveți vreo întrebare?",
+                contact: "Contactați-ne în orice mod convenabil pentru dvs"
             },
             copyrights: "© 2025 Dezvoltat de Ana Burcovschi. Toate drepturile rezervate."
         }
         
 
     },
+    
     ru: {
         translation: {
             menu: {
-                home: "Дома",
+                logo: "Транспорт MD-RO",
+                home: "Главная",
                 contacts: "Контакты",
                 services: "Услуги"
             },
-            banner: "Транспорт пассажиров Сергий",
+            btn: "Напишите на",
+            banner: "Транспортировка пассажиров ежедневно из/в Кахул - аэропорт/город Бухарест, Кахул - аэропорт/город Яссы, Кахул - Галац, Кахул - Бакэу. Для дополнительных направлений свяжитесь с нами по следующему номеру.",
             services: {
                 title: "Услуги",
                 route_short: [
-                    "Транспорт Кахул-Бухарест", 
-                    "Транспорт Кахул-Яссы", 
-                    "Транспорт Кахул-Галац"  
+                    "Транспорт Кахул-Бухарест",
+                    "Транспорт Кахул-Яссы",
+                    "Транспорт Кахул-Галац",
+                    "Транспорт Кахул-Бакэу"
                 ],
-                route_long:  [
-                    ["Кахул", "Отопени", "Аэропорт Анри Коанда", "Бэнеаса", "Бухарест"], 
-                    ["Кахул", "Аэропорт", "Яссы"], 
+                route_long: [
+                    ["Кахул", "Отопени", "Аэропорт имени Генри Коанды", "Банеаса", "Бухарест"],
+                    ["Кахул", "По запросу клиента: Кантемир", "По запросу клиента: Лева", "Аэропорт Яссы", "Яссы"],
+                    ["Кахул", "Бакэу"],
                     ["Кахул", "Галац"]
                 ],
-                description_short: "Ежедневный транспорт пассажиров до / из. Для дополнительных направлений свяжитесь с нами по следующему номеру.",
                 description_long: [
-                    "Удобные и быстрые маршруты из Кагула в Бухарест, проходящие через аэропорт Отопени и Бэняса, гарантируют приятное и беззаботное путешествие.",
-                    "Прямой транспорт из Кагула в аэропорт Яссы и на автовокзал Яссы, чтобы добраться быстро и с комфортом, идеально подходит для деловых поездок или отпуска.",
-                    "Быстрые и доступные поездки из Кагула в Галац с превосходным сервисом и гибким расписанием, подстраивающимся под потребности пассажиров."
-                ],
-                
+                    "Транспортировка пассажиров осуществляется ежедневно между Кахулом и Бухарестом с удобными остановками в аэропортах Отопени имени Генри Коанды и Банеаса. Студенты имеют право на скидки, что делает поездку более доступной для молодежи. При бронировании вы можете указать желаемое время прибытия в Бухарест, если пункт назначения не является аэропортом. Время отправления адаптируется к расписанию рейса, соблюдая правило «2-3 часа до вылета», что гарантирует, что вы прибудете вовремя для всех формальностей перед посадкой и путешествием.",
+                    "Транспортировка пассажиров осуществляется ежедневно между Кахулом и Яссами, предлагая эффективный сервис с остановками по запросу клиента в Кантемире и Леве с 8:00 до 20:00. Также предусмотрены остановки в аэропорту Ясс, что облегчает доступ для путешественников. Студенты имеют право на скидки, что делает поездку более доступной. При бронировании вы можете указать желаемое время прибытия в Яссы, если пункт назначения не является аэропортом. Время отправления будет адаптировано к расписанию рейса, соблюдая правило «2-3 часа до вылета» для удобства всех пассажиров.",
+                    "Транспортировка пассажиров осуществляется ежедневно между Кахулом и Бакэу, предлагая эффективный и комфортный сервис. Студенты имеют право на скидки, что делает поездку более доступной. При бронировании вы можете указать желаемое время прибытия в Бакэу, чтобы оно соответствовало вашему расписанию. Эта услуга обеспечивает приятный и безстрессовый опыт, облегчая быстрый доступ к месту назначения и учитывая потребности всех путешественников.",
+                    "Транспортировка пассажиров осуществляется ежедневно между Кахулом и Галацем, обеспечивая качественный сервис. Студенты могут воспользоваться скидками, что делает поездку более удобной. При бронировании вы можете указать желаемое время прибытия в Галац, чтобы оно соответствовало вашему расписанию. Эта опция предоставляет гибкость и комфорт, гарантируя приятное и эффективное путешествие для всех пассажиров."
+                ]
             },
             benefits: [
                 "Комфорт во время поездки",
                 "Бесплатный багаж для всех пассажиров",
                 "Гибкий график",
-                "Безопасность во время поездки"
+                "Безопасность во время поездки",
+                "Детские кресла для безопасности детей"
             ],
             recinzii: [],
             form: {
-                name: "Имя",
-                email: "Электронная почта",
-                telephone: "Телефон",
-                select: "Выберите",
-                option: ["Кахул", "Бухарест", "Галац", "Яссы"],
-                btn: "Отправить"
+                message: "У вас есть вопросы?",
+                contact: "Свяжитесь с нами любым удобным для вас способом"
             },
-            contacts: {
-                message1: "Спасибо, что выбрали Транспорт Пассажиров Сергий! Мы здесь, чтобы предоставить вам лучшие транспортные услуги, адаптированные к вашим потребностям. Если у вас есть вопросы, предложения или вы хотите запросить предложение, не стесняйтесь связаться с нами.",
-                address: "Адрес",
-                message2: "Заполните форму ниже, и представитель нашей компании свяжется с вами в кратчайшие сроки."
-            },
-            copyrights: "© 2025 Разработано Анной Бурковски. Все права защищены."
+            copyrights: "© 2025 Разработано Анной Бурковщей. Все права защищены."
         }
     }
 }
+
 i18n.use(initReactI18next).init({
     resources,
     lng: "ro",

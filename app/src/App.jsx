@@ -1,21 +1,25 @@
 import './App.css'
-import { Link, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
+import { createContext } from 'react';
 import HomePage from './Components/HomePage';
 import Contacts from './Components/Contacts';
 import Services from './Components/Services';
 import Nav from './Components/Nav'
 import Footer from './Components/Footer'
-
-const telephone = "1234567890"
+export const TelephoneContext = createContext()
+const telephone = "+37379636390"
 function App() {
+ 
   return (
     <>
       <Nav telephone={telephone}/>
-      <Routes>
-                <Route path="/" element={<HomePage  telephone={telephone}/>} />
-                <Route path='/Contacts' element={<Contacts telephone={telephone} />} />
-                <Route path='/Services' element={<Services telephone={telephone}/>} />
-            </Routes>
+      <TelephoneContext.Provider value={telephone}>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path='/Contacts' element={<Contacts/>} />
+          <Route path='/Services' element={<Services/>} />
+        </Routes>
+      </TelephoneContext.Provider>
       <Footer telephone={telephone}/>
       
     </>

@@ -1,6 +1,7 @@
 import Bucharest from "../assets/img/Bucuresti.jpg";
 import Galata from "../assets/img/Galati.jpg";
 import Iasi from "../assets/img/Iasi.jpg";
+import Bacau from "../assets/img/Bacau.jpg"
 import Whatsapp from "../assets/img/Whatsapp.svg";
 import { useTranslation } from 'react-i18next'; 
 
@@ -11,23 +12,26 @@ export default function ServiciiComp(props) {
         {
             name: t("services.route_short.0"),
             img: Bucharest,
-            route: t("services.route_long.0", { returnObjects: true }), 
-            descriptionShort: t("services.description_short"),
+            route: t("services.route_long.0", { returnObjects: true }),
             description: t("services.description_long.0")
         },
         {
             name: t("services.route_short.1"),
             img: Iasi,
-            route: t("services.route_long.1", { returnObjects: true }), 
-            descriptionShort: t("services.description_short"),
+            route: t("services.route_long.1", { returnObjects: true }),
             description: t("services.description_long.1")
         },
         {
             name: t("services.route_short.2"),
             img: Galata,
-            route: t("services.route_long.2", { returnObjects: true }), 
-            descriptionShort: t("services.description_short"),
+            route: t("services.route_long.2", { returnObjects: true }),
             description: t("services.description_long.2")
+        },
+        {
+            name: t("services.route_short.3"),
+            img: Bacau,
+            route: t("services.route_long.3", { returnObjects: true }),
+            description: t("services.description_long.3")
         }
     ];
 
@@ -49,13 +53,11 @@ export default function ServiciiComp(props) {
                                         <p className="subtitle">
                                             {item.name}
                                         </p>
-                                        <p>
-                                             {item.descriptionShort}
-                                        </p>
-                                        <a href={`tel:${props.telephone}`} className="btn flexbox">
-                                            <img src={Whatsapp} alt="WhatsApp"/>
-                                            {props.telephone}
-                                        </a>
+                                        {/* <a href={`https://wa.me/${props.telephone}`}
+                                        className="flexbox btn">
+                                            <img src={Whatsapp} alt="" />
+                                            Contactati-ne pe WhatsApp
+                                        </a> */}
                                     </div>
                                 </div>
                             ))}
@@ -64,7 +66,7 @@ export default function ServiciiComp(props) {
                         <div className="servicii-servicii">
                             {data.map((item, index) => (
                                 <div key={index} className="servicii-item-servicii flexbox">
-                                    <div>
+                                    <div className="item-img">
                                         <img src={item.img} alt={item.name} />
                                     </div>
                                     <div className="description">
@@ -74,9 +76,6 @@ export default function ServiciiComp(props) {
                                         <p>
                                             {item.description}
                                         </p>
-                                        <p>
-                                            {t("services.description_short")} 
-                                        </p>
                                         <ul>
                                             {item.route.map((route, routeIndex) => (
                                                 <li className="route" key={routeIndex}>
@@ -84,9 +83,10 @@ export default function ServiciiComp(props) {
                                                 </li>
                                             ))}
                                         </ul>
-                                        <a href={`tel:${props.telephone}`} className="btn flexbox">
-                                            <img src={Whatsapp} alt="WhatsApp"/>
-                                            {props.telephone}
+                                        <a href={`https://wa.me/${props.telephone}`}
+                                        className="flexbox btn">
+                                            <img src={Whatsapp} alt="" />
+                                            {t("btn")} WhatsApp
                                         </a>
                                     </div>
                                 </div>

@@ -17,8 +17,9 @@ export default function Nav(props) {
     return (
         <div className="nav-container">
             <div className='nav flexbox'>
-                <Link to="/" className='logo'>
-                    <img src={logo} alt="" />
+                <Link to="/" className='logo flexbox'>
+                    <img src={logo} alt="logo" />
+                    {t("menu.logo")}
                 </Link>
                 <div className='flexbox nav-links'>
                     <Link to="/" className='nav-item'>

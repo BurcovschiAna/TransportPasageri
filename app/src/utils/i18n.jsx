@@ -14,10 +14,10 @@ const resources = {
             services: {
                 title: "Servicii",
                 route_short: [
-                    "Transport Cahul-București", 
-                    "Transport Cahul-Iași", 
-                    "Transport Cahul-Galați",
-                    "Transport Cahul-Bacău" 
+                    "Cahul-București", 
+                    "Cahul-Iași", 
+                    "Cahul-Galați",
+                    "Cahul-Bacău" 
                 ],
                 route_long:  [
                     ["Cahul", "Otopeni", "Aeroport Henri Coandă", "Băneasa" ,"București"], 
@@ -32,7 +32,8 @@ const resources = {
                     "Transportul pasagerilor se desfășoară zilnic între Cahul și Galați, asigurând un serviciu de calitate. Studenții pot beneficia de reduceri, ceea ce face călătoria mai convenabilă. La rezervare, aveți posibilitatea de a specifica ora dorită de sosire în Galați, pentru a se potrivi cu programul dumneavoastră. Această opțiune oferă flexibilitate și confort, garantând o călătorie plăcută și eficientă pentru toți pasagerii."
                 ],
             },
-            benefits: [
+            benefits: "Beneficii",
+            benefits_array:  [
                 "Comfort în timpul călătoriei",
                 "Bagaj gratuit pentru toți pasagerii",
                 "Orar flexibil",
@@ -41,21 +42,45 @@ const resources = {
             ],
             reviews: {
                 title: "Recenzii",
-                message1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message4: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message5: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message6: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                reviews1: {
+                    name: "Nume 1",
+                    message: "Lorem sum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews2: {
+                    name: "Nume 2",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews3: {
+                    name: "Nume 3",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews4: {
+                    name: "Nume 4",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews5: {
+                    name: "Nume 5",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews6: {
+                    name: "Nume 6",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+            },
+            about_us: {
+                title: "Despre noi",
+                message: [
+                    "Compania „Transport MD-RO” oferă servicii de transport pasageri zilnic între Cahul, Moldova și diverse destinații din România, inclusiv București, Iași, Galați și Bacău. Ne mândrim cu un serviciu sigur și eficient, adaptat nevoilor clienților noștri. Oferim confort sporit în timpul călătoriei, cu opțiuni de bagaj gratuit pentru toți pasagerii și scaune auto pentru siguranța copiilor.",
+                    "La fiecare rezervare, pasagerii pot specifica ora dorită de sosire, asigurându-se astfel că ajung la timp pentru toate formalitățile de îmbarcare. Beneficiile noastre includ un orar flexibil, reduceri pentru studenți și un angajament ferm față de siguranța călătorilor.",
+                    "Ne străduim să oferim o experiență plăcută și fără stres, adaptându-ne la programul zborurilor și nevoile fiecărui pasager. Contactați-ne pentru mai multe informații și pentru a rezerva călătoria dumneavoastră. „Transport MD-RO” este alegerea ideală pentru o călătorie confortabilă și sigură între Moldova și România."
+                ]
             },
             form: {
                 message: "Aveți vreo întrebare?",
                 contact: "Contactați-ne în orice mod convenabil pentru dvs"
             },
-            copyrights: "© 2025 Dezvoltat de Ana Burcovschi. Toate drepturile rezervate."
+            copyrights: "© 2025  Toate drepturile rezervate."
         }
-        
-
     },
     
     ru: {
@@ -89,7 +114,8 @@ const resources = {
                     "Транспортировка пассажиров осуществляется ежедневно между Кахулом и Галацем, обеспечивая качественный сервис. Студенты могут воспользоваться скидками, что делает поездку более удобной. При бронировании вы можете указать желаемое время прибытия в Галац, чтобы оно соответствовало вашему расписанию. Эта опция предоставляет гибкость и комфорт, гарантируя приятное и эффективное путешествие для всех пассажиров."
                 ]
             },
-            benefits: [
+            benefits: "Beneficii",
+            benefits_array: [
                 "Комфорт во время поездки",
                 "Бесплатный багаж для всех пассажиров",
                 "Гибкий график",
@@ -98,18 +124,36 @@ const resources = {
             ],
             reviews: {
                 title: "Отзывы",
-                message1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message4: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message5: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
-                message6: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora in quis labore, vel reiciendis sequi suscipit delectus placeat quo enim corrupti libero inventore harum ab",
+                reviews1: {
+                    name: "Nume 1",
+                    message: "Lorem sum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews2: {
+                    name: "Nume 2",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews3: {
+                    name: "Nume 3",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews4: {
+                    name: "Nume 4",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews5: {
+                    name: "Nume 5",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
+                reviews6: {
+                    name: "Nume 6",
+                    message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugiat nam voluptatibus non praesentium incidunt soluta sequi culpa impedit dolor ipsum, excepturi provident recusandae repellendus ratione dolores ipsa eum."
+                },
             },
             form: {
                 message: "У вас есть вопросы?",
                 contact: "Свяжитесь с нами любым удобным для вас способом"
             },
-            copyrights: "© 2025 Разработано Анной Бурковщей. Все права защищены."
+            copyrights: "© 2025 Все права защищены."
         }
     }
 }

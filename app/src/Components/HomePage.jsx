@@ -62,66 +62,57 @@ const Banner =  (props) => {
 
 const Reviews = () => {
     const { t } = useTranslation();
+    const data = [
+        {
+            reviewImg: people1,
+            reviewName : t("reviews.reviews1.name"),
+            reviewMessage: t("reviews.reviews1.message")
+        },
+        {
+            reviewImg: people1,
+            reviewName : t("reviews.reviews2.name"),
+            reviewMessage: t("reviews.reviews2.message")
+        },
+        {
+            reviewImg: people1,
+            reviewName : t("reviews.reviews3.name"),
+            reviewMessage: t("reviews.reviews3.message")
+        },
+        {
+            reviewImg: people1,
+            reviewName : t("reviews.reviews4.name"),
+            reviewMessage: t("reviews.reviews4.message")
+        },
+        {
+            reviewImg: people1,
+            reviewName : t("reviews.reviews5.name"),
+            reviewMessage: t("reviews.reviews5.message")
+        },
+        {
+            reviewImg: people1,
+            reviewName : t("reviews.reviews6.name"),
+            reviewMessage: t("reviews.reviews6.message")
+        }
+    ]
     return (
         <div className="wrapper">
             <h1 className="title">
                 {t("reviews.title")}
             </h1>
-            <div className="reviews-container">
-                <div className="review-item">
-                    <div className="flexbox">
-                        <img src={people1} alt="" />
-                        <span className="name">Nume 1</span>
+            <div className="reviews-container flexbox">                
+                {data.map((item) => (
+                    <div className="review-item" key={item.reviewName}>
+                        <div className="flexbox">
+                            <img src={item.reviewImg} alt="" />
+                            <div className="name">
+                                {item.reviewName}
+                            </div>
+                        </div>
+                        <div className="review-text">
+                            {item.reviewMessage}
+                        </div>
                     </div>
-                    <div className="review-text">
-                        {t("reviews.message1")}
-                    </div>
-                </div>
-                <div className="review-item">
-                    <div className="flexbox">
-                        <img src={people1} alt="" />
-                        <span className="name">Nume 2</span>
-                    </div>
-                    <div className="review-text">
-                        {t("reviews.message2")}
-                    </div>
-                </div>
-                <div className="review-item">
-                    <div className="flexbox">
-                        <img src={people1} alt="" />
-                        <span className="name">Nume 3</span>
-                    </div>
-                    <div className="review-text">
-                        {t("reviews.message3")}
-                    </div>
-                </div>
-                <div className="review-item">
-                    <div className="flexbox">
-                        <img src={people1} alt="" />
-                        <span className="name">Nume 4</span>
-                    </div>
-                    <div className="review-text">
-                        {t("reviews.message4")}
-                    </div>
-                </div>
-                <div className="review-item">
-                    <div className="flexbox">
-                        <img src={people1} alt="" />
-                        <span className="name">Nume 5</span>
-                    </div>
-                    <div className="review-text">
-                        {t("reviews.message5")}
-                    </div>
-                </div>
-                <div className="review-item">
-                    <div className="flexbox">
-                        <img src={people1} alt="" />
-                        <span className="name">Nume 6</span>
-                    </div>
-                    <div className="review-text">
-                        {t("reviews.message6")}
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );

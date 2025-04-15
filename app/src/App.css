@@ -131,6 +131,9 @@ a.btn img{
 .benefits-conatiner, .form-container{
   background-color: var(--background-color);
 }
+.benefits-conatiner{
+  padding: 20px;
+}
 .benefits-conatiner .flexbox{
   align-items: flex-start;
   flex-wrap: wrap;
@@ -140,19 +143,85 @@ a.btn img{
   flex: 1;
   min-width: 200px;
 }
+.item-benefits:hover span{
+  font-size: 60px;
+}
 .item-benefits span{
   font-size: 50px;
+  transition: all .2s ease-in-out;
 }
 .item-benefits p{
   font-size: 20px;
   padding: 20px;
 }
 
+/* ! reviews */
 .reviews-container{
-  padding: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  padding: 30px 0;
+  margin: 30px 0;
+  position: relative;
+  height: 260px;
+  width: 100%;  
+  perspective-origin: bottom;
+  perspective: 800px;
+  overflow: hidden;
+}
+.review-item{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  max-width: 300px;
+  height: 250px;
+  line-height: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px var(--hover-btn-color);
+  transform: translate(-50%, -50%);
+  animation: carousel-reviews 90s linear infinite;
+  opacity: 0;
+}
+.review-item:nth-of-type(1){
+  animation-delay: -30s;
+}
+.review-item:nth-of-type(2){
+  animation-delay: -15s;
+}
+.review-item:nth-of-type(3){
+   animation-delay: 0s;
+}
+.review-item:nth-of-type(4){
+ animation-delay: 15s;
+}
+.review-item:nth-of-type(5){
+  animation-delay: 30s;
+}
+.review-item:nth-of-type(6){
+  animation-delay: 45s;
+}
+
+@keyframes carousel-reviews {
+  0%{
+    opacity: 0;
+    transform: translate(-800%, -50%); 
+  }
+  0.1%, 16.33%{
+    transform: translate(-160%, -50%);
+    opacity: 1;
+  }
+  16.66%, 33%{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  33.33%, 49.5%{
+    opacity: 1;
+    transform: translate(60%, -50%);
+  }
+  50%, 100%{
+    opacity: 0;
+      transform: translate( 900%,-50%);
+  }
 }
 .review-item .flexbox{
   justify-content: start;
@@ -208,6 +277,21 @@ a.btn img{
   width: 99%;
   height: 600px;
   margin: 0 auto;
+}
+.about-us{
+  width: 50%;
+  padding: 20px;
+}
+.about-us img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about-us-description{
+  width: 50%;
+  padding: 20px;
+}
+.about-us-description p{
+  padding: 10px 0;
 }
 
 /*! Footer  */

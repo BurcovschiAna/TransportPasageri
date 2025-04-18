@@ -1,4 +1,6 @@
 import './App.css'
+import "./Media.css"
+
 import { Route, Routes} from 'react-router-dom';
 import { createContext } from 'react';
 import HomePage from './Components/HomePage';

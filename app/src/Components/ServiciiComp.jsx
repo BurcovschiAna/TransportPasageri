@@ -49,7 +49,7 @@ export default function ServiciiComp(props) {
                 {isHomePage ? 
                     <div className="servicii-home flexbox">
                         {data.map((item) => (
-                            <Link to={`/Services#${item.id}`} key={item.name}>
+                            <Link to={`/Services#${item.id}`} key={item.name} className="servicii-link">
                                 <div className="servicii-item-home">
                                     <img src={item.img} alt={item.name} />
                                     <div className="description">

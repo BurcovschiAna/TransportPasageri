@@ -1,5 +1,4 @@
 import ServiciiComp from "./ServiciiComp";
-import Benefits from "./Benefits";
 import { useContext, useEffect } from 'react';
 import { TelephoneContext } from "../App";
 import { useLocation } from 'react-router-dom';
@@ -19,9 +18,7 @@ export default function Services(props) {
 
     return (
         <div>
-            <ServiciiComp isHomePage={false} telephone={telephone}/>
-            <Benefits />
-            
+            <ServiciiComp isHomePage={false} telephone={telephone}/>            
         </div>
     );
 }

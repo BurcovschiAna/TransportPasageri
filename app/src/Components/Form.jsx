@@ -17,7 +17,6 @@ export default function Form(props) {
                     <p className="subtitle">
                         {t("form.contact")}
                     </p>
-                    
                         <a href={`https://wa.me/${props.telephone}`}
                         className="flexbox btn">
                             <img src={Whatsapp} alt="" />
@@ -32,7 +31,6 @@ export default function Form(props) {
                             <img src={Telephone} alt="" />
                              {props.telephone}
                         </a> 
-                    
                 </div>
                 <div className="form-img">
                     <img src={formImg} alt="" />

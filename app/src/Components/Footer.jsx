@@ -18,8 +18,7 @@ export default function Footer(props){
                             <img src={logo} alt="" />
                             <div>
                                 {t("menu.logo")}
-                            </div>
-                            
+                            </div>      
                         </Link> 
                         <a href={`tel:${props.telephone}`} className='flexbox'>
                             <img src={Telephone} alt="" />
@@ -33,13 +32,8 @@ export default function Footer(props){
                                 <img src={instagram} alt="" />
                             </a>
                         </div>
-                        
-
-                        
-                        
                     </div>          
-                    <div>
-                                       
+                    <div>                  
                         <Link to="/" className='nav-item'>
                             {t('menu.home')} 
                         </Link> 
@@ -48,10 +42,8 @@ export default function Footer(props){
                         </Link> 
                         <Link to="/Services" className='nav-item'>
                             {t("menu.services")}
-                        </Link>
-                       
-                    </div>
-                                
+                        </Link>        
+                    </div>                
                 </div>
                 <div className="copyrites">
                     {t("copyrights")}

@@ -1,15 +1,19 @@
+
+
+
 .nav-container, .footer-container{
   background-color: var(--main-color);
 }
-
 .nav{
   max-width: 1300px;
   margin: 0 auto;
   padding: 10px;
-  color: white;
 }
 .nav-links{
   width: 50%;
+}
+.links{
+  width: 80%;
 }
 .nav a{
   font-weight: bold;
@@ -60,7 +64,6 @@ user-select: none;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%);
-
   width: 60%;
 }
 .overlay h1{
@@ -81,7 +84,6 @@ user-select: none;
 
 /*! ServiciiComp */
 .servicii-container{
-  padding: 20px;
   margin: 50px 0;
 }
 .servicii-home{
@@ -91,8 +93,11 @@ user-select: none;
 }
 .servicii-item-home{
   max-width: 300px;
-  margin: 10px 0;
+  margin: 10px;
 
+}
+.servicii-link{
+  margin: 0 auto;
 }
 .servicii-item-home img{
   border-radius: 20px;
@@ -118,6 +123,7 @@ user-select: none;
 .servicii-item-servicii .description p{
   padding: 10px 0;
   font-size: 16px;
+  text-align: justify;
 }
 .description .route{
   line-height: 30px;
@@ -142,6 +148,7 @@ a.btn img{
   text-align: center;
   flex: 1;
   min-width: 200px;
+  padding: 10px 0;
 }
 .item-benefits:hover span{
   font-size: 60px;
@@ -173,8 +180,7 @@ a.btn img{
   background-color: white;
   padding: 20px;
   margin: 5px;
-  max-width: 300px;
-  height: 250px;
+  width: 300px;
   line-height: 25px;
   border-radius: 20px;
   box-shadow: 0px 3px 10px var(--hover-btn-color);

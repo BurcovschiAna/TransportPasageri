@@ -10,7 +10,7 @@ const AboutUs = () => {
             <h1 className="title">
                 {t("about_us.title")}
             </h1>
-            <div className="flexbox">
+            <div className="about-us-conatiner flexbox">
                 <div className="about-us">
                     <img src={about_us} alt="" />
                 </div>
